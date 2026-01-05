@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fun Time 🎉</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&
+family=Quicksand:wght@400;500;600&
+family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+/* BODY */
+body{
+  background:linear-gradient(135deg,#fff5fa,#ffffff);
+  font-family:'Quicksand', sans-serif;
+  color:#b30059;
+  margin:0;
+  height:100vh;
+  overflow:hidden;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+/* FUNNY BACKGROUND IMAGE */
+.bg-fun{
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:420px;
+  opacity:0.25;
+  z-index:1;
+  pointer-events:none;
+}
+
+/* SLIDE */
+.slide{
+  text-align:center;
+  max-width:850px;
+  padding:20px;
+  animation:fadeIn 1s ease;
+  position:relative;
+  z-index:2;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* HEADING */
+h2{
+  font-family:'Playfair Display', serif;
+  font-size:38px;
+  margin-bottom:18px;
+}
+
+/* FUN TEXT */
+.fun-text{
+  font-size:22px;
+  line-height:1.8;
+}
+
+/* HANDWRITTEN HIGHLIGHTS */
+.hand{
+  font-family:'Pacifico', cursive;
+  color:#ff4d94;
+  font-size:26px;
+}
+
+/* BUTTON */
+button{
+  margin-top:35px;
+  padding:15px 38px;
+  border:none;
+  border-radius:30px;
+  background:#ff4d94;
+  color:white;
+  font-family:'Quicksand', sans-serif;
+  font-size:18px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 10px 25px rgba(255,77,148,0.4);
+}
+</style>
+</head>
+
+<body>
+
+<!-- FUNNY TRANSPARENT IMAGE -->
+<img src="fun-bg.png" class="bg-fun" alt="Funny background">
+
+<div class="slide">
+  <h2>🎉 Let’s Have Some Fun</h2>
+
+  <p class="fun-text">
+    From laughing at silly jokes 😂  
+    to fighting over nothing 🙄  
+    to being inseparable 💗  
+    Gabbaaaa 1st daily snana madu kolka 🤥🤢  
+    You’re honestly one of a kind—part human encyclopedia,  
+    part meme lord, and full-time snack king 😄.  
+    Somehow, you always know random trivia no one else does,  
+    have the perfect playlist ready, and  
+    can make everyone laugh until their stomach hurts.  
+
+    You’re also the daredevil who tries crazy stuff just for fun,  
+    the unofficial therapist who gives advice between jokes,  
+    and the master of remembering every embarrassing moment 😅.  
+    Basically, life with you is never boring, and I’m lucky to call you my bestie!  
+
+    <br><br>
+    <span class="hand">Life is more fun with you, Lodda 🎈</span>
+  </p>
+
+  <button onclick="next()">Next ▶️</button>
+</div>
+
+<script>
+function next(){
+  window.location.href="gallery.html";
+}
+</script>
+
+</body>
+</html>
